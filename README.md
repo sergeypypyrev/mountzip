@@ -1,6 +1,6 @@
 ## mountzip
 
-Mount a ZIP file as a read-only file system.
+A Linux kernel module that mounts a ZIP file as a read-only file system.
 
 ## Prerequisites
 
