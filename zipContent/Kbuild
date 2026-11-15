@@ -1,0 +1,9 @@
+# Kernel build of the demo module (make kmod). User space uses Makefile.
+# zipr is compiled from ./zipr (a symlink to ../zipr).
+obj-m := zipContentDemo.o
+zipContentDemo-y := \
+	kmod/zipContentDemoMain.o \
+	zipContent.o \
+	zipr/zipr.o
+
+ccflags-y := -I$(src)/zipr

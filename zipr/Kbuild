@@ -1,0 +1,5 @@
+# Kernel build of the demo module (make kmod). User space uses Makefile.
+obj-m := ziprDemo.o
+ziprDemo-y := \
+	kmod/ziprDemoMain.o \
+	zipr.o
